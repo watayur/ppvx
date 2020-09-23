@@ -1,9 +1,10 @@
 <html>
     <head>
+        <script language="javascript" type="text/javascript" src="./js/calc_pp.js"></script>
         <title>ppvx</title>
     </head>
     <body>
-        <p>Star Rating: <input type="text" name="sr" size="10"></p>
+        <p>Star Rating (with DT/HT): <input type="text" name="sr" size="10"></p>
         <p>Overall Difficulty: <input type="text" name="od" size="10"></p>
         <p>Accuracy: <input type="text" name="acc" size="10"></p>
         <p>Max Combo: <input type="text" name="combo" size="10"></p>
@@ -15,8 +16,7 @@
         <p>DT: <input type="checkbox" name="dt" value="0"></p>
         <p>HT: <input type="checkbox" name="ht" value="0"></p>
         <p>NF: <input type="checkbox" name="nf" value="0"></p>
-
-        <!-- <script type="text/javascript" src="./js/script1_1.js">
-        </script> -->
+        <p><input type="button" value="Calculate" onclick="OnButtonClick()"/></p>
+        <p><div class="contents" id="pp"></div></p>
     </body>
 </html>
