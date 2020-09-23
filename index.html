@@ -4,19 +4,22 @@
         <title>ppvx</title>
     </head>
     <body>
-        <p>Star Rating (with DT/HT): <input type="text" name="sr" size="10"></p>
-        <p>Overall Difficulty: <input type="text" name="od" size="10"></p>
-        <p>Accuracy: <input type="text" name="acc" size="10"></p>
-        <p>Max Combo: <input type="text" name="combo" size="10"></p>
-        <p>Miss Count: <input type="text" name="miss" size="10"></p>
-        <p>HD: <input type="checkbox" name="hd" value="0"></p>
-        <p>HR: <input type="checkbox" name="hr" value="0"></p>
-        <p>EZ: <input type="checkbox" name="ez" value="0"></p>
-        <p>FL: <input type="checkbox" name="fl" value="0"></p>
-        <p>DT: <input type="checkbox" name="dt" value="0"></p>
-        <p>HT: <input type="checkbox" name="ht" value="0"></p>
-        <p>NF: <input type="checkbox" name="nf" value="0"></p>
-        <p><input type="button" value="Calculate" onclick="OnButtonClick()"/></p>
+        <p><h2>osu!taiko ppvx</h2></p>
+        <p><font color="#ff0000"><b>* This is different from the ongoing pp algorithm.</b></font><br>
+        <b>* "Max Combo" here means the combo you got in a record, not the number of notes in a map.</b></p>
+        <p>Star Rating (with DT/HT): <input type="text" id="sr" size="10"></p>
+        <p>Overall Difficulty: <input type="text" id="od" size="10"></p>
+        <p>Accuracy: <input type="text" id="acc" size="10"></p>
+        <p>Max Combo: <input type="text" id="combo" size="10"></p>
+        <p>Miss Count: <input type="text" id="miss" size="10"></p>
+        <p>HD: <input type="checkbox" id="hd" value="0"></p>
+        <p>HR: <input type="checkbox" id="hr" value="0" onclick="OnHRButtonClick()"></p>
+        <p>EZ: <input type="checkbox" id="ez" value="0" onclick="OnEZButtonClick()"></p>
+        <p>FL: <input type="checkbox" id="fl" value="0"></p>
+        <p>DT: <input type="checkbox" id="dt" value="0" onclick="OnDTButtonClick()"></p>
+        <p>HT: <input type="checkbox" id="ht" value="0" onclick="OnHTButtonClick()"></p>
+        <p>NF: <input type="checkbox" id="nf" value="0"></p>
+        <p><input type="button" value="Calculate" onclick="OnCalcButtonClick()"/></p>
         <p><div class="contents" id="pp"></div></p>
     </body>
 </html>
